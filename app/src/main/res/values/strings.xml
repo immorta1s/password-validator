@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">A2</string>
+    <string name="edit_message">Enter your password:</string>
+    <string name="button_validate">Validate</string>
 </resources>

@@ -23,7 +23,7 @@ public class Validator {
         }
 
         //4th requirement
-        if(!(input.contains("@") | input.contains("!") | input.contains("#")){
+        if(!(input.contains("@") | input.contains("!") | input.contains("#"))){
             check++;
         }
 

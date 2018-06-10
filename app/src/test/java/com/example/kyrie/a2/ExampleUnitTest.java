@@ -1,6 +1,9 @@
 package com.example.kyrie.a2;
 
 import org.junit.Test;
+import org.junit.BeforeClass;
+
+
 
 import static org.junit.Assert.*;
 
@@ -10,8 +13,17 @@ import static org.junit.Assert.*;
  * @see <a href="http://d.android.com/tools/testing">Testing documentation</a>
  */
 public class ExampleUnitTest {
-    @Test
-    public void addition_isCorrect() {
-        assertEquals(4, 2 + 2);
+
+    static Validator va;
+    static int a = 5;
+
+    public static void init(){
+        va = new Validator();
     }
+
+    @Test
+    public void Validator_isCorrect() {
+        assertEquals(a,va.validator("abcdefghi"),5);
+    }
+
 }
